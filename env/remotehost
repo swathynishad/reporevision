@@ -1,0 +1,46 @@
+//On server
+$ sudo apt-get update
+$ sudo apt-get install openssh-server -y
+//on local
+$ ssh mca@10.22.0.133
+  The authenticity of host '10.22.0.133 (10.22.0.133)' can't be established.
+  ECDSA key fingerprint is 4c:73:6a:d3:26:0c:4d:e4:8b:b5:89:25:51:17:58:91.
+  Are you sure you want to continue connecting (yes/no)? y
+  Please type 'yes' or 'no': yes
+  Warning: Permanently added '10.22.0.133' (ECDSA) to the list of known hosts.
+  mca@10.22.0.133's password: 
+  Welcome to Ubuntu 16.04 LTS (GNU/Linux 4.4.0-84-generic x86_64)
+
+//disply all files
+$ ls
+
+$ exit
+logout
+Connection to 10.22.0.133 closed.
+
+//to send file from local to remote server
+$ scp /home/mca/binarysearch.sh mca@10.22.0.133:/home/mca
+mca@10.22.0.133's password: 
+binarysearch.sh                               100%  476     0.5KB/s   00:00    
+
+//to access file from remote server to local
+scp  mca@10.22.0.133:/home/mca/neww.txt /home/mca
+mca@10.22.0.133's password: 
+neww.txt                                      100%    4     0.0KB/s   00:00    
+
+//to send multiple from file local to remote server
+$ scp /home/mca/binarysearch.sh /home/mca/gec.txt mca@10.22.0.133:/home/mca
+mca@10.22.0.133's password: 
+binarysearch.sh                               100%  476     0.5KB/s   00:00    
+gec.txt                                       100%   12     0.0KB/s   00:00    
+
+//to access Directory from Remote host to the Local host
+$ scp  mca@10.22.0.133:/home/mca/Aishin/eg.sh /home/mca
+mca@10.22.0.133's password: 
+eg.sh                                         100%  152     0.2KB/s   00:00    
+
+//to send Directory from lcal host to the remote host
+$ scp -r /home/mca/swa/test.txt mca@10.22.0.133:/home/mca
+mca@10.22.0.133's password: 
+test.txt                                      100%    0     0.0KB/s   00:00    
+

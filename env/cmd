@@ -1,0 +1,137 @@
+mca@mca-HP-280-G2-MT:~$ ssh MCA@10.22.10.34
+The authenticity of host '10.22.10.34 (10.22.10.34)' can't be established.
+ECDSA key fingerprint is e1:55:90:18:43:e9:ad:0a:21:17:84:cd:ba:22:4e:61.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.22.10.34' (ECDSA) to the list of known hosts.
+MCA@10.22.10.34's password: 
+Permission denied, please try again.
+MCA@10.22.10.34's password: 
+
+[1]+  Stopped                 ssh MCA@10.22.10.34
+mca@mca-HP-280-G2-MT:~$ ssh mca@10.22.10.34
+mca@10.22.10.34's password: 
+Welcome to Ubuntu 16.04 LTS (GNU/Linux 4.4.0-84-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+429 packages can be updated.
+11 updates are security updates.
+
+Last login: Mon Apr  1 14:33:45 2019 from 10.22.10.33
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ ls
+Android                                   new2
+android-studio                            ngrok
+android-studio-ide-181.5056338-linux.zip  os
+AndroidStudioProjects                     pgm6.sh
+assi                                      Pictures
+atdemo                                    pro.odt
+bulk.txt                                  Public
+demo                                      R
+demo1                                     raman1.sh
+Desktop                                   raman2.sh
+Documents                                 raman.sh
+Downloads                                 rami.sh
+ds                                        rami.tar.gz
+Ep                                        Ramitha
+examples.desktop                          remoterepo
+fahiz                                     reverse.c
+fairoos                                   reverse.java
+java                                      seminar_schedule (copy).xlsx
+java_error_in_STUDIO_.log                 seminar_schedule.xlsx
+javapackages                              sort.c
+linkedlist.c                              stack.c
+local22.txt                               stringreverse.c
+localrepo                                 syam
+local.txt                                 Templates
+Music                                     Twin-bell-alarm-clock-sound.mp3
+myfile                                    Untitled Folder
+new                                       Videos
+new1                                      vineetha
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ exit
+logout
+Connection to 10.22.10.34 closed.
+mca@mca-HP-280-G2-MT:~$ ssh mca@10.22.0.133
+The authenticity of host '10.22.0.133 (10.22.0.133)' can't be established.
+ECDSA key fingerprint is 4c:73:6a:d3:26:0c:4d:e4:8b:b5:89:25:51:17:58:91.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added '10.22.0.133' (ECDSA) to the list of known hosts.
+mca@10.22.0.133's password: 
+Welcome to Ubuntu 16.04 LTS (GNU/Linux 4.4.0-84-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+426 packages can be updated.
+11 updates are security updates.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ ls
+a.c                                       IEEE Xplore Full-Text PDF_.html
+Aishin                                    local
+Android                                   Music
+android-studio                            netbeans-8.2
+android-studio-ide-181.5056338-linux.zip  NewDir1
+AndroidStudioProjects                     neww.txt
+a.out                                     ngrok
+atdemo1                                   original.jpg
+atdemo2                                   os
+ColPrg.class                              Pictures
+ColPrg.java                               Public
+Desktop                                   R
+dir04                                     repochattcp
+dir06                                     repotcp
+Documents                                 repoudp
+Downloads                                 sampledir
+examples.desktop                          seconddir
+fork.c                                    sjfs.c
+fork.c.c                                  ss
+gitdir                                    Templates
+gitnewdir                                 test files
+glassfish-4.1.1                           Videos
+H                                         workshop
+IEEE Xplore Full-Text PDF__files          workshop.tar.gz
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ exit
+logout
+Connection to 10.22.0.133 closed.
+mca@mca-HP-280-G2-MT:~$ scp /home/mca/binarysearch.sh mca@10.22.0.133:/home/mca
+mca@10.22.0.133's password: 
+binarysearch.sh                               100%  476     0.5KB/s   00:00    
+mca@mca-HP-280-G2-MT:~$ scp  mca@10.22.0.133:/home/mca/neww.txt /home/mca
+mca@10.22.0.133's password: 
+neww.txt                                      100%    4     0.0KB/s   00:00    
+mca@mca-HP-280-G2-MT:~$ scp /home/mca/binarysearch.sh /home/mca/gec.txt mca@10.22.0.133:/home/mca
+mca@10.22.0.133's password: 
+binarysearch.sh                               100%  476     0.5KB/s   00:00    
+gec.txt                                       100%   12     0.0KB/s   00:00    
+mca@mca-HP-280-G2-MT:~$ scp -r /home/mca/swathy.txt mca@10.22.0.133:/home/mcamca@10.22.0.133's password: 
+swathy.txt                                    100%    0     0.0KB/s   00:00    
+mca@mca-HP-280-G2-MT:~$ scp -r  mca@10.22.0.133:/home/mca/test files /home/mcamca@10.22.0.133's password: 
+scp: /home/mca/test: No such file or directory
+cp: cannot stat ‘files’: No such file or directory
+mca@mca-HP-280-G2-MT:~$ scp -r  mca@10.22.0.133:/home/mca/ss /home/mca
+mca@10.22.0.133's password: 
+mca@mca-HP-280-G2-MT:~$ scp  mca@10.22.0.133:/home/mca/aishin/eg.txt /home/mcamca@10.22.0.133's password: 
+scp: /home/mca/aishin/eg.txt: No such file or directory
+mca@mca-HP-280-G2-MT:~$ scp  mca@10.22.0.133:/home/mca/Aishin/eg.txt /home/mca
+mca@10.22.0.133's password: 
+scp: /home/mca/Aishin/eg.txt: No such file or directory
+mca@mca-HP-280-G2-MT:~$ scp  mca@10.22.0.133:/home/mca/Aishin/eg.sh /home/mca
+mca@10.22.0.133's password: 
+eg.sh                                         100%  152     0.2KB/s   00:00    
+mca@mca-HP-280-G2-MT:~$ scp -r /home/mca/swa/test.txt mca@10.22.0.133:/home/mca
+mca@10.22.0.133's password: 
+test.txt                                      100%    0     0.0KB/s   00:00    
+mca@mca-HP-280-G2-MT:~$ scp  mca@10.22.0.133:/home/mca/doc.txt /home/mcamca@10.22.0.133's password: 
+scp: /home/mca/doc.txt: No such file or directory
+mca@mca-HP-280-G2-MT:~$ scp  mca@10.22.0.133:/home/mca/Aishin/doc.txt /home/mca
+mca@10.22.0.133's password: 
+doc.txt                                       100%   88     0.1KB/s   00:00    
+mca@mca-HP-280-G2-MT:~$ 
+
